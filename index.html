@@ -1,14 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <title> hello hekomisites</title>
-    <meta charset="utf-8">
-    <link rel="stylessheet" href="Style.css">
-  </head>
-  <body>
-   <section class="layout">
-  <div class="sidebar">side</div>
-  <div class="body">main</div>
-</section>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイドバーで分けられたページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #sidebar {
+            width: 20%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #main-content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* サイドバーのリンクスタイル */
+        #sidebar a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* サイドバーのリンクホバー時のスタイル */
+        #sidebar a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sidebar">
+        <h2>サイドバー</h2>
+        <ul>
+            <li><a href="#section1">1</a></li>
+            <li><a href="#section2">2</a></li>
+            <li><a href="#section3">3</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <h1 id="section1">セクション1</h1>
+        <p>1。</p>
+
+        <h1 id="section2">2</h1>
+        <p>test2。</p>
+
+        <h1 id="section3">3</h1>
+        <p>test3。</p>
+    </div>
+
+</body>
 </html>
+
