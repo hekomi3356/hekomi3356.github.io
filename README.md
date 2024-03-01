@@ -2,5 +2,4 @@
 - hekomisite Hello README.md
 - [ ] クラウドなどの機能
 - [x] サイト制作
-- [ ] [site]: hekomisites.netlify.app
-      [サイトを見る][site]
+      [サイト](hekomisites.netlify.app/)
